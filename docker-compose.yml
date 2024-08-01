@@ -1,0 +1,16 @@
+services:
+  dev-db:
+    image: postgres:13
+    ports:
+      - 5432:5432 
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: nest
+    volumes:
+      - /c/Users/thsib/Documents/NestJS/pg_data:/var/lib/postgresql/data
+    networks:
+      - pg-network
+
+networks:
+  pg-network:
