@@ -7,7 +7,7 @@ export class EditBookmarDto {
 
   @IsString()
   @IsOptional()
-  descripttion?: string;
+  description?: string;
 
   @IsString()
   @IsOptional()
